@@ -52,6 +52,7 @@
 				height: 34px;
 				margin: 10px auto;
 				line-height: 34px;
+        /* 注意height和line-height保持一致是为了让字体能够居中 */
 				border-radius: 8px;
 				border: 1px solid #858382;
 				font-size: 13px;
@@ -67,6 +68,16 @@
 				text-align: center;
 				color: #fff;
 			}
+      /*去掉多余的分隔符*/
+      .u-tab li:nth-child(2){
+        border-right: none;
+      }
+      .m-button-bar{
+        width:70%;
+        max-width:800px;
+        padding:5px;
+        margin:0 auto;
+      }
   </style>
 </head>
 
