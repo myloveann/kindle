@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no,minimal-ui">
+  <meta name="format-detection" content="telephone=no">
+  <!-- 避免内容为数字的显示和其他不同 -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/reset.css">
+  <title>Kindle阅读器</title>
+  <style>
+    html {
+      width: 100%;
+      height: 100%;
+      overflow-x: hidden;
+      /* 写 overflow-x 属性的原因是防止body横向溢出，导致页面无法滚动 */
+    }
+
+    body {
+      text-align: left;
+      width: 100%;
+      overflow: hidden;
+      background: #e9dfc7;
+    }
+
+    .m-read-content {
+      font-size: 14px;
+      color: #555;
+      line-height: 31px;
+      padding: 15px;
+    }
+
+    .m-read-content h4 {
+      font-size: 20px;
+      color: #736357;
+      border-bottom: solid 1px #736357;
+      margin: 0 0 1em 0;
+      letter-spacing: 2px; /*表示字体间距*/
+    }
+
+    .m-read-content p{
+      text-indent: 2em;  /*设置段落缩进*/
+      margin: 0.5em 0;
+      text-align: justify;
+      letter-spacing: 0px;
+      line-height: 24px;
+    }
+
+    .u-tab{
+				position: relative;
+				height: 34px;
+				margin: 10px auto;
+				line-height: 34px;
+				border-radius: 8px;
+				border: 1px solid #858382;
+				font-size: 13px;
+				background: #000;
+				opacity: 0.9;
+			}
+			.u-tab li{
+				display: inline-block;
+				width: 49%;
+				font-size: 13px;
+				border-right: 1px solid #858382;
+				-webkit-box-sizing: border-box;
+				text-align: center;
+				color: #fff;
+			}
+  </style>
+</head>
+
+<body>
+  <div id="root" class="container">
+    <div class="fiction_chapter_title"></div>
+    <div id="fiction_container" class="m-read-content">
+      <h4>春江花月夜</h4>
+      <p>春江潮水连海平，海上明月共潮生。 滟滟随波千万里，何处春江无月明！ 江流宛转绕芳甸，月照花林皆似霰； 空里流霜不觉飞，汀上白沙看不见。 江天一色无纤尘，皎皎空中孤月轮。 江畔何人初见月？江月何年初照人？ 人生代代无穷已，江月年年只相似。
+        不知江月待何人，但见长江送流水。 白云一片去悠悠，青枫浦上不胜愁。 谁家今夜扁舟子？何处相思明月楼？ 可怜楼上月徘徊，应照离人妆镜台。 玉户帘中卷不去，捣衣砧上拂还来。 此时相望不相闻，愿逐月华流照君。 鸿雁长飞光不度，鱼龙潜跃水成文。
+        昨夜闲潭梦落花，可怜春半不还家。 江水流春去欲尽，江潭落月复西斜。 斜月沉沉藏海雾，碣石潇湘无限路。 不知乘月几人归，落月摇情满江树。
+      </p>
+      <h4>春江花月夜</h4>
+      <p>春江潮水连海平，海上明月共潮生。 滟滟随波千万里，何处春江无月明！ 江流宛转绕芳甸，月照花林皆似霰； 空里流霜不觉飞，汀上白沙看不见。 江天一色无纤尘，皎皎空中孤月轮。 江畔何人初见月？江月何年初照人？ 人生代代无穷已，江月年年只相似。
+        不知江月待何人，但见长江送流水。 白云一片去悠悠，青枫浦上不胜愁。 谁家今夜扁舟子？何处相思明月楼？ 可怜楼上月徘徊，应照离人妆镜台。 玉户帘中卷不去，捣衣砧上拂还来。 此时相望不相闻，愿逐月华流照君。 鸿雁长飞光不度，鱼龙潜跃水成文。
+        昨夜闲潭梦落花，可怜春半不还家。 江水流春去欲尽，江潭落月复西斜。 斜月沉沉藏海雾，碣石潇湘无限路。 不知乘月几人归，落月摇情满江树。
+      </p>
+      <h4>春江花月夜</h4>
+      <p>春江潮水连海平，海上明月共潮生。 滟滟随波千万里，何处春江无月明！ 江流宛转绕芳甸，月照花林皆似霰； 空里流霜不觉飞，汀上白沙看不见。 江天一色无纤尘，皎皎空中孤月轮。 江畔何人初见月？江月何年初照人？ 人生代代无穷已，江月年年只相似。
+        不知江月待何人，但见长江送流水。 白云一片去悠悠，青枫浦上不胜愁。 谁家今夜扁舟子？何处相思明月楼？ 可怜楼上月徘徊，应照离人妆镜台。 玉户帘中卷不去，捣衣砧上拂还来。 此时相望不相闻，愿逐月华流照君。 鸿雁长飞光不度，鱼龙潜跃水成文。
+        昨夜闲潭梦落花，可怜春半不还家。 江水流春去欲尽，江潭落月复西斜。 斜月沉沉藏海雾，碣石潇湘无限路。 不知乘月几人归，落月摇情满江树。
+      </p>
+    </div>
+    <div class="m-button-bar">
+      <ul class="u-tab">
+        <li id="prev_button">上一章</li>
+        <li id="next_button">下一章</li>
+      </ul>
+    </div>
+  </div>
+</body>
+
+</html>
