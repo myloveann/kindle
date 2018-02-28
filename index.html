@@ -394,3 +394,34 @@
 </script>
 <script src="js/jquery.base64.js"></script>
 <script src="js/jquery.jsonp.js"></script>
+
+<script>
+  //对数据进行一定的封装；
+  (function(){
+    var Util=(function(){
+      var prefix='html_kindle_';
+      var storageGetter=function(key){
+        return localStorage.getItem(prefix+key);
+      };
+      var storageSetter=function(key,val){
+        return localStorage.setItem(prefix+key,val);
+      }
+      return {
+        StorageGetter:storageGetter,
+        StorageSetter:storageGetter
+      }
+    })();
+    function main(){
+      //todo 整个项目的入口函数
+    }
+    function readerModel(){
+      //todo 实现和阅读器相关的数据交互的方法；
+    }
+    function readerBaseFrame(){
+      //todo 渲染基本的UI结构
+    }
+    function EventHanlder(){
+      //todo 交互的事件绑定
+    }
+  })();
+</script>
