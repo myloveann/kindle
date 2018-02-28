@@ -333,7 +333,7 @@
       </ul>
     </div>
 
-    <div class="nav-pannel-bk" style="display: none"></div>
+    <div class="nav-pannel-bk font-container" style="display: none"></div>
     <div class="nav-pannel font-container" id="font-container" style="display: none">
       <div class="child-mod">
         <span>字号</span>
@@ -426,7 +426,9 @@
     //声明一些常用的变量；
     var Dom={
       top_nav: $('#top-nav'),
-      bottom_nav: $('.bottom_nav')
+      bottom_nav: $('.bottom_nav'),
+      font_container:$('.font-container'),
+      font_button:$('#font-button')
     }
     var Win=$(Window);
     var Doc=$(document);
@@ -455,6 +457,20 @@
         Win.scroll(function(){
           Dom.top_nav.hide();
           Dom.bottom_nav.hide();
+        })
+      });
+      Dom.font_button.click(function(){
+        // alert(1);
+        if(Dom.font_container.css('display')=='none'){
+          Dom.font_container.show();
+          Dom.font_button.addClass('current');
+        }else{
+          Dom.font_container.hide();
+          Dom.font_button.removeClass('current');
+        }
+
+        Win.scroll(function(){
+          Dom.font_container.hide();
         })
 
       })
