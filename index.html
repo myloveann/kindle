@@ -221,7 +221,7 @@
 				margin: 0 auto;
 				position: relative;
 			}
-      
+
     .icon-back {
       position: absolute;
       top: 14px;
@@ -369,7 +369,7 @@
         </div>
       </div>
       <div class="item" id="night-button">
-        <div class="item-warp" id="day_icon">
+        <div class="item-warp" id="day_icon" style="display:none">
           <div class="icon-day"></div>
           <div class="icon-text">
             白天
@@ -387,3 +387,10 @@
 </body>
 
 </html>
+
+<script src="lib/zepto.min.js"></script>
+<script>
+  window.jQuery=$;//这样写的原因是为了保证base64和jsonp两个插件能够正常使用
+</script>
+<script src="js/jquery.base64.js"></script>
+<script src="js/jquery.jsonp.js"></script>
